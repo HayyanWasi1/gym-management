@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+   .navbar{
+    background-color: rgb(232, 153, 153);
+   }
+   .footer-content{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+   }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CLASS BASS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center align-items-center flex-grow-1 pe-3 fs-5"
+        id="navbarSupportedContent">
+        <div class="search d-flex gap-2 ">
+          <div class="same-icons search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="yoga, pilates, massage">
+          </div>
+          <div class="same-icons location">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="San Francisco, CA, UK">
+          </div>
+        </div>
+        <div class="nav-content d-flex">
+          <a href="/">Home</a>
+          <a href="/about">About Us</a>
+          <a href="/service">Service</a>
+          <a href="/login">login</a>
+          <a href="/membership">
+            <i class="fa-solid fa-bolt-lightning"
+              style="color: #ffe605; font-weight: 600; margin-right: 0.5em;"></i>Membership
+          </a>
+          <a href="/gallery" class="spec" style="color: #2ae649;">
+            Gallery
+          </a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <div class="aboutUs" style="margin-top: 0;">
+        <div class="about-left">
+          <div class="aboutUs-left-main d-flex ">
+            <div class="abt-left">
+              <span class="gym-name" id="aboutus">---About Us---</span>
+              <img src="./static/images/premium_photo-1683121008092-7c4e5c75f2ce.avif" alt="something">
+              <!-- <img src="{{ url_for('static', filename='/premium_photo-1683121008092-7c4e5c75f2ce.avif') }}" alt="Logo"> -->
+    
+            </div>
+    
+            <div class="abt-right d-flex justify-content-center flex-column">
+              <span class="information ">Info about Class Bass - GYM</span>
+              <div class="details">
+                <p class="set-details">- Class Bass - Gym - Uk - melbounrne -Karachi</p>
+                <p class="set-details">- fro50m 9:00am to 12:00pm</p>
+                <p class="set-details">- opened all the week 24/7 services</p>
+                <p class="set-details">- currently leading the market with five star ratings Lorem ipsum dolor sit dis
+                  doloremque malorum iure fugiat sapiente, mollitia excepturi deserunt.</p>
+                <span class="rating">
+                  <span>
+                    <b style="color: #ff9e0c;">4.7</b> <img src="{{ url_for('static', filename='images/rating.png') }}" alt="Logo"></span> 
+                   
+                </span>
+    
+              </div>
+            </div>
+          </div>
+          <div class="aboutus-left-small">
+            <div class="comment-card">
+              <div class="upper d-flex justify-content-center align-items-center gap-5">
+                <div class="comnt-card1 border border-6-danger h-75 ">
+                  <div class="comment-prof w-25">
+                    <img src="./static/images/portrait-man-laughing_23-2148859448.avif" alt="">
+    
+                  </div>
+                  <div class="comment-body d-flex flex-column">
+                    <span class="name">John Woaks</span>
+                    <span class="comnt-head"><b class="name">Comment:</b><i style="font-size: 0.6em; line-height: 0.1em;">
+                        the satff was veru helpfull and all the other services were very quick</i></span>
+    
+                  </div>
+                </div>
+                <div class="comnt-card2  border border-6-danger h-75 d-flex">
+                  <div class="comment-prof w-25">
+                    <img src="./static/images/putin.png" alt="">
+    
+                  </div>
+                  <div class="comment-body d-flex flex-column">
+                    <span class="name">vladimir putin</span>
+                    <span class="comnt-head"><b class="name">Comment:</b><i style="font-size: 0.6em; line-height: 0.1em;">
+                        the satff was veru helpfull and all the other services were very quick</i></span>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="lower  d-flex justify-content-center align-items-center gap-5">
+                <div class="comnt-card1 border border-6-danger h-75 ">
+                  <div class="comment-prof w-25">
+                    <img src="./static/images/TechProf.jpg" alt="">
+    
+                  </div>
+                  <div class="comment-body d-flex flex-column">
+                    <span class="name">Donald Trump</span>
+                    <span class="comnt-head"><b class="name">Comment:</b><i style="font-size: 0.6em; line-height: 0.1em;">
+                        the satff was veru helpfull and all the other services were very quick</i></span>
+    
+                  </div>
+                </div>
+                <div class="comnt-card2  border border-6-danger h-75 d-flex">
+                  <div class="comment-prof w-25">
+                    <img src="./static/images/kamala.png" alt="">
+    
+                  </div>
+                  <div class="comment-body d-flex flex-column">
+                    <span class="name">Kamala Harris</span>
+                    <span class="comnt-head"><b class="name">Comment:</b><i style="font-size: 0.6em; line-height: 0.1em;">
+                        the satff was veru helpfull and all the other services were very quick</i></span>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right d-flex justify-content-between flex-column align-items-center">
+          <div class="map d-flex justify-content-center ">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462119.41084920615!2d66.82580701669156!3d25.19283711530519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1731784845696!5m2!1sen!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="links">
+            <div class="inner-link">
+              <p><i class="fa-solid fa-phone" style="color: #000000;"></i> +92 311-1111111111</p>
+              <p><i class="fa-brands fa-instagram" style="color: #000000;"></i> @ClassBass</p>
+              <p><i class="fa-brands fa-square-facebook" style="color: #000000;"></i> /ClassBass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <p>© 2024 Your Company. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@yourcompany.com">info@classbass.com</a></p>
+        <p>Follow us on: <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+</body>
+</html>
