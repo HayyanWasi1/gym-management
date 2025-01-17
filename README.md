@@ -3,3 +3,11 @@ user authentication, and a Gallery showcasing gym interiors and events. The Cont
 amenities such as modern equipment, group classes, personal training, and relaxation areas like saunas and lockers. Developed using HTML, CSS for the frontend, and Flask for backend routing, this project ensures a 
 streamlined and responsive user experience. To run the project, set up the Flask environment, and launch the server to view the application. Contributions are welcome under the MIT License. Enhance and enjoy the Gym 
 Management Website today!
+
+
+
+instructions for run the app!!
+open terminal 
+write python app.py
+and enter
+just click on the local host IP and ready to go👍
